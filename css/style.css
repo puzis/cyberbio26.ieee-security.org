@@ -1,0 +1,250 @@
+:root {
+  --primary-color: #19ff83;
+  /* BIO-ISAC Bright Green */
+  --secondary-color: #004d4f;
+  /* Slightly lighter teal */
+  --accent-color: #ffffff;
+  /* White */
+  --bg-dark: #003033;
+  /* BIO-ISAC Dark Teal */
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-main: #e0e0e0;
+  --text-muted: #b0caca;
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.logo-box {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+.logo-box img {
+  max-height: 80px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.logo-box {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 210, 255, 0.5);
+  color: #fff;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header & Nav */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 18, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(157, 0, 255, 0.15) 0%, rgba(10, 10, 18, 0) 70%);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: -2px;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #fff 0%, var(--primary-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 0;
+}
+
+.bg-darker {
+  background: #050509;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+/* Logos & Grid */
+.organizers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.organizers-grid img {
+  max-width: 100%;
+  max-height: 80px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.organizers-grid img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    /* simple mobile hide for now, could enhance later */
+  }
+}
