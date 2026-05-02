@@ -234,7 +234,7 @@ nav {
 .speaker-profile {
   display: flex;
   gap: 2rem;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 1rem;
 }
 
