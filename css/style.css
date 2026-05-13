@@ -74,6 +74,64 @@ a:hover {
   color: var(--accent-color);
 }
 
+li::marker {
+  color: var(--primary-color);
+}
+
+.card ul,
+.card ol,
+.info-box ul,
+.info-box ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card li,
+.info-box li {
+  margin-bottom: 0.3rem;
+}
+
+.card p,
+.info-row p {
+  margin-bottom: 0.75rem;
+}
+
+.card p:last-child,
+.info-row p:last-child {
+  margin-bottom: 0;
+}
+
+/* Topics of Interest grid */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 2.5rem;
+  margin-top: 1.25rem;
+}
+
+.topic-block h4 {
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.topic-block ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.topic-block li {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -266,13 +324,43 @@ nav {
   color: var(--text-muted);
 }
 
-/* Schedule */
-.schedule {
+/* Schedule + info-box (shared banded-section pattern) */
+.schedule,
+.info-box {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   overflow: hidden;
   backdrop-filter: blur(5px);
+}
+
+.info-row {
+  padding: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.info-row:first-child {
+  border-top: none;
+}
+
+.info-row.header {
+  background: rgba(0, 16, 18, 0.55);
+  padding: 1.1rem 1.75rem;
+}
+
+.info-row.header h3 {
+  margin: 0;
+}
+
+.info-row h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.info-row > h4:first-child,
+.info-row > *:first-child {
+  margin-top: 0;
 }
 
 .schedule-row {
