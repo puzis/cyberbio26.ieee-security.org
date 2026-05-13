@@ -9,147 +9,280 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="index.html"><img src="resources/images/logos/cyberbio26_medium.png" alt="CyberBio26"
-                            style="height: 60px;"></a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cfp.html">Call for Papers</a></li>
-                    <li><a href="program.html" class="active">Program</a></li>
-                    <li><a href="organization.html">Organization</a></li>
-                    <li><a href="reviewers.html">Reviewers</a></li>
-                    <li><a href="https://na.eventscloud.com/ereg/index.php?eventid=867927&" class="btn"
-                            target="_blank">Register</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <header id="site-header"></header>
 
     <section class="section" style="padding-top: 120px;">
         <div class="container">
-            <h1>Program</h1>
+            <h1 style="margin-bottom: 2rem;">Program</h1>
 
-            <div class="card" style="margin-bottom: 2rem;">
-                <h3>Keynote Speaker</h3>
-                <div class="speaker-profile">
-                    <div class="speaker-photo">
-                        <img src="resources/images/sforres3.png" alt="Stephanie Forrest">
+            <div class="schedule">
+
+                <!-- Opening Remarks -->
+                <div class="schedule-row session">
+                    <div class="schedule-time">8:50 AM &ndash; 9:00 AM</div>
+                    <div class="schedule-body">
+                        <h4>Opening Remarks</h4>
                     </div>
-                    <div class="speaker-info">
-                        <h4>Stephanie Forrest</h4>
-                        <p style="color: #666; margin-bottom: 0.5rem;">Arizona State University, USA</p>
-                        <p style="margin-bottom: 1rem; font-size: 1.05em;"><strong>Talk Title:</strong>
-                            Cybersecurity Recapitulates Biology</p>
-                        <div class="bio-container">
-                            <p id="sforrest-bio"
-                                style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.5rem; line-height: 1.5;">
-                                Stephanie Forrest is Regents Professor of Computer Science at Arizona State University,
-                                where she directs the Biodesign Center for Biocomputation, Security and Society. Her
-                                interdisciplinary research focuses on the intersection of biology and computation,
-                                including cybersecurity, software engineering, evolutionary computation, biological
-                                modeling, and other complex adaptive systems. In cybersecurity, she is best known for
-                                developing the first practical anomaly intrusion-detection system and for proposing
-                                proactive defense methods that use engineered diversity.<br><br>
-                                Prior to joining ASU in 2017, she was a Distinguished Professor at the University of New
-                                Mexico and served as Dept. Chair. She was educated at St. John's College (B.A.) and the
-                                University of Michigan (M.S. and Ph.D. in Computer Science). She spent 2013-2014 at the
-                                U.S. Dept. of State as a Senior Science Advisor for cyberpolicy and is a member of the
-                                Santa Fe Institute External Faculty.
-                            </p>
-                            <a href="javascript:void(0);"
-                                onclick="const bio = document.getElementById('sforrest-bio'); if (bio.style.display === '-webkit-box') { bio.style.display = 'block'; this.innerText = 'Read Less'; } else { bio.style.display = '-webkit-box'; this.innerText = 'Read More'; }"
-                                style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Read
-                                More</a>
+                </div>
+
+                <!-- Keynote -->
+                <div class="schedule-row session">
+                    <div class="schedule-time">9:00 AM &ndash; 10:00 AM</div>
+                    <div class="schedule-body">
+                        <h3>Keynote: Cybersecurity Recapitulates Biology</h3>
+                        <div class="keynote-feature">
+                            <div class="speaker-photo">
+                                <img src="resources/images/sforres3.png" alt="Stephanie Forrest">
+                            </div>
+                            <div class="keynote-feature-body">
+                                <span class="keynote-speaker-name">Stephanie Forrest</span>
+                                <span class="keynote-speaker-affil">Regents Professor of Computer Science, Arizona State University</span>
+                                <details class="bio-toggle">
+                                    <summary>Speaker bio</summary>
+                                    <div class="bio-body">
+                                        <p>Stephanie Forrest is Regents Professor of Computer Science at Arizona State University, where she directs the Biodesign Center for Biocomputation, Security and Society. Her interdisciplinary research focuses on the intersection of biology and computation, including cybersecurity, software engineering, evolutionary computation, biological modeling, and other complex adaptive systems. In cybersecurity, she is best known for developing the first practical anomaly intrusion-detection system and for proposing proactive defense methods that use engineered diversity.</p>
+                                        <p>Prior to joining ASU in 2017, she was a Distinguished Professor at the University of New Mexico and served as Dept. Chair. She was educated at St. John's College (B.A.) and the University of Michigan (M.S. and Ph.D. in Computer Science). She spent 2013&ndash;2014 at the U.S. Dept. of State as a Senior Science Advisor for cyberpolicy and is a member of the Santa Fe Institute External Faculty.</p>
+                                    </div>
+                                </details>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="schedule-row break">
+                    <div class="schedule-time">10:00 AM &ndash; 10:30 AM</div>
+                    <div class="schedule-body">
+                        <h4>Coffee &amp; Poster Session</h4>
+                    </div>
+                </div>
+
+                <!-- Session 1 -->
+                <div class="schedule-row session">
+                    <div class="schedule-time">10:30 AM &ndash; 11:45 AM</div>
+                    <div class="schedule-body">
+                        <h3>Session 1 &mdash; Cyberbiosecurity Foundations &amp; Frameworks</h3>
+                        <div class="talk-list">
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Targeting Systems, Not Pathogens: Adapting Cybersecurity Threat Modeling for AI-Era Biosecurity</span>
+                                    <span class="talk-authors">James Diggans, Kevin Flyangolts, Rami Puzis &middot; Twist Bioscience; Aclid; Ben-Gurion University of the Negev</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Position Paper.</span>The biosecurity community's historical focus on physical containment of known pathogens is being outpaced by AI-enabled biodesign tools that can create novel biological threats bearing no sequence similarity to well-characterized agents or toxins. This shift from threats defined by sequence identity to threats defined by functional equivalence mirrors the evolution of cybersecurity, where behavioral analysis became the dominant paradigm for detecting novel and sophisticated threats, surpassing reliance on signature- and hash-based methods. We propose that biosecurity adopt three foundational frameworks from cybersecurity: (1) vulnerability enumeration analogous to the Common Vulnerabilities and Exposures (CVE) system, (2) threat categorization using an adaptation of Microsoft's STRIDE model, and (3) 'biological' adversary tactics mapping inspired by MITRE ATT&amp;CK. We present concrete examples of each framework applied to biological threats and outline a roadmap for development. By shifting from pathogen-list defense to vulnerability-aware, function-based threat modeling, the biosecurity community can build defenses capable of anticipating engineered threats rather than merely cataloging the natural ones.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Defining Cyberbiosecurity by Biological Consequence</span>
+                                    <span class="talk-authors">Tia Pope &middot; North Carolina A&amp;T State University</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Position Paper.</span>As biological systems become increasingly digitized, cyber disruption can now produce biological consequences. Cyberbiosecurity emerged to address this risk and is commonly framed as the convergence of cybersecurity, cyber-physical systems, and biosecurity. However, its operational boundary remains ambiguous. We conducted a structured survey identifying 59 relevant publications from 1,140 search results and found that approximately 90 percent are conceptual or review-oriented, with limited formal inclusion criteria. To address this gap, we propose a consequence-based refinement of cyberbiosecurity, defining it as the protection of systems whose cyber disruption can produce measurable biological consequences. We formalize this as a deterministic inclusion rule and introduce a consequence-first classification model. Stress-test scenarios demonstrate consistent boundary determination independent of sector labels. This refinement preserves the interdisciplinary foundation of cyberbiosecurity while enabling empirical research design, operational scoping, and alignment with risk management and regulatory frameworks.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Cybersecurity and Privacy Threat Modeling: A Genomics Use Case</span>
+                                    <span class="talk-authors">Jared Sheldon, Isabelle Brown-Cantrell, Phillip Whitlow, Scott Ross &middot; UAH CCRE; HudsonAlpha Institute for Biotechnology</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Presentation.</span>This presentation will discuss cybersecurity and privacy threat modeling for biocybersecurity using a real-world genomics lab as a case study. These forms of threat modeling have several commonalities, but also have crucial differences in perspective, priorities, and approach. This presentation introduces both types of threat modeling and covers these similarities and differences in more detail. The insights shared were gained through interaction with an operational genomics lab over several years and multiple projects where cybersecurity and privacy threat models were developed and publicly shared.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Teaching Ethical Hacking for the Bioeconomy: A Cyberbiosecurity Curriculum in Practice</span>
+                                    <span class="talk-authors">Charles Frick &middot; JHUAPL</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Presentation.</span>The rapid expansion of the bioeconomy has created an urgent need for a workforce capable of securing biological data, laboratory systems, and digitally enabled research infrastructure. However, cyberbiosecurity concepts are largely absent from early education pathways, limiting exposure to interdisciplinary risk at the point where career interests are formed. This presentation describes a hands-on cyberbiosecurity curriculum for high school students that integrates foundational cybersecurity principles with realistic biotechnology scenarios, ethical instruction, and defensive remediation activities. Delivered through isolated virtual lab environments, the curriculum allows students to safely explore how common software vulnerabilities can impact biological data integrity and laboratory operations while reinforcing legal and ethical boundaries. Drawing on multiple deployments and iterative refinement, the talk presents observed outcomes, design constraints, and lessons learned for introducing cyberbiosecurity concepts at scale as part of a sustainable workforce development pipeline.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">The AI &times; Biosecurity Research Hackathon: Cross-Track Findings on DNA Screening, Early Warning, and Biosecurity Tools</span>
+                                    <span class="talk-authors">Jason Hoelscher-Obermaier, Jaime Raldúa Veuthey, Kamil Alaa, Joshua Landes, Grace Braithwaite, James Montavon &middot; Apart Research; BlueDot Impact; Cambridge Biosecurity Hub</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Presentation.</span>We report on the AI &times; Biosecurity Research Hackathon (April 24&ndash;26, 2026), a three-day hybrid research sprint co-organized by Apart Research, BlueDot Impact, and Cambridge Biosecurity Hub. The hackathon runs four tracks directly aligned with CyberBio26's scope: (1) DNA Screening &amp; Synthesis Controls, (2) Pandemic Early Warning, (3) AI Biosecurity Tools, and (4) Benchtop Synthesizer Security. We expect 100+ teams (online plus regional in-person sites) to deliver research MVPs reviewed by 40+ domain experts from biosecurity and AI safety organizations. We propose to present the outcomes at CyberBio26 as: (i) a short plenary talk summarizing cross-track findings, methodology, and lessons for running open research events on dual-use topics; and (ii) posters from the top hackathon teams showcasing concrete contributions.</div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster Lightning Pitches -->
+                <div class="schedule-row session">
+                    <div class="schedule-time">11:45 AM &ndash; 12:00 PM</div>
+                    <div class="schedule-body">
+                        <h4>Poster Lightning Pitches</h4>
+                        <p class="theme-note">Five poster authors &middot; 2 minutes each &middot; <a href="#posters">see posters below</a></p>
+                    </div>
+                </div>
+
+                <div class="schedule-row break">
+                    <div class="schedule-time">12:00 PM &ndash; 1:15 PM</div>
+                    <div class="schedule-body">
+                        <h4>Lunch</h4>
+                    </div>
+                </div>
+
+                <!-- Session 2 -->
+                <div class="schedule-row session">
+                    <div class="schedule-time">1:15 PM &ndash; 2:30 PM</div>
+                    <div class="schedule-body">
+                        <h3>Session 2 &mdash; Sequence Screening Security</h3>
+                        <div class="talk-list">
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Adversarial Genomic Sequences Could Evade Biosecurity Screening</span>
+                                    <span class="talk-authors">Jeyashree Krishnan, Ajay Mandyam Rangarajan, Andrea Loehr, Jason Hoelscher-Obermaier &middot; Apart Research; University Hospital RWTH Aachen</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Paper.</span>Recent biosecurity risk assessments identify biological foundation models as having high misuse potential over the coming decade that lowers barriers to develop harmful biological agents, with many tools open source and readily accessible to potential threat actors (Nelson &amp; Rose, 2023; Webster et al., 2025). At the same time, Genomic Foundation Models (GFMs) such as DNABERT-2 (Zhou et al., 2024) and Nucleotide Transformer v2 (Dalla-Torre et al., 2025) could help improve biosecurity defenses; yet their robustness under adversarial attacks remains poorly understood. To address this gap, we evaluate the susceptibility of GFMs to adversarial mutations. Since genomic inputs are discrete and subject to biological constraints, standard adversarial perturbation models for continuous domains do not directly apply (Kuleshov et al., 2021). We study promoter classification as a representative task and analyze GFM robustness under black-box threat models with nucleotide-level perturbations. Adversarial sequences are generated via genetic algorithms subject to explicit biological constraints, including GC-content bounds, mutation budgets, and motif preservation. Our analysis reveals that GFMs are vulnerable to perturbation-efficient adversarial attacks requiring only a small number of nucleotide edits. These vulnerabilities are not random: effective adversarial substitutions favor transversions over transitions and concentrate in the 5&rsquo; regulatory region of promoter sequences. Iterative adversarial training reduces attack success rates from initial values of approximately 40&ndash;45%, but substantial attack success of 25&ndash;35% persists after ten rounds of hardening. Our results establish adversarial evaluation of GFMs as a joint biological and machine learning challenge requiring domain-specific threat models and defenses.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">DNAS-Bench: Deterministic Nucleic Acid Screener Benchmarking</span>
+                                    <span class="talk-authors">Henry C. Wong, Tadayoshi Kohno, Jeff Nivala &middot; University of Washington; Georgetown University</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Paper.</span>The rapid growth of biotechnology manufacturing for synthetic DNA and proteins has raised concerns that adversaries could exploit commercial synthesis pipelines to create biological weapons. Without effective safeguards, an attacker could seek regulated genetic sequences from synthesis providers; while synthetic DNA is not itself a pathogen or toxin, access to such sequences can lower barriers to downstream misuse, motivating robust order-time screening. To mitigate this risk, Biosecurity Screening Software (BSS) systems have been developed to flag potentially malicious synthesis orders. Here, we propose one of the first deterministic benchmarks for evaluating the robustness of Biosecurity Screening Software. Our framework enables systematic testing of BSS weaknesses on specific nucleic-acid sequences and on targeted regions of malicious protein-coding genomes. We additionally introduce a dataset of manipulated genomes derived from the HHS and USDA Select Agents and Toxins List. When evaluated on this dataset, SeqScreen achieves an overall detection rate of 41.99%, while Commec achieves 10.19%. Across a range of manipulation strategies, we find that simple, mundane manipulations, such as padding sequences by adding a repeated nucleotide at 1.5 times the original length, perform nearly as well as more targeted methods, such as embedding malicious sequences within benign genomic context, differing by only 0.75 percentage points in detection rate on average. Consistent with prior reports from BSS developers, we observe a sharp drop in detection rate when input sequence length falls below a critical threshold, typically between 50 and 100 base pairs (bp). Under our threat model, this implies that an adversary can bypass most existing safeguards by splitting a target genome into fragments shorter than ~50 base pairs. Fragment-level analysis further reveals that some toxin regions evade detection entirely by SeqScreen, while other malicious genomes remain detectable even when fragmented into 30&ndash;50 base-pair segments. We release this benchmark to support reproducible evaluation of BSS robustness and to inform the development of next-generation biosecurity screening tools.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">PlasmidScreen: Towards Enhanced Detection of Genetically Engineered Plasmids</span>
+                                    <span class="talk-authors">Felix M. Quintana, Ryan D. Doughty, Michael G. Nute, Lydia E. Kavraki, Todd J. Treangen &middot; Rice University</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Short Paper.</span>The wide availability of genetic engineering tools has provided a paradigm shift for biological research. Design, build, test, and learn cycles have facilitated rapid advances in understanding of the underlying rules of biology. As of early 2026, the plasmid repository Addgene now hosts over 160,000 genetically engineered plasmids from over 6,000 labs, indicating the prevalence and relevance of engineering DNA constructions for a variety of applications. However, exciting advances in plasmid engineering for societal benefit also come with the risk of misuse. Thus, robust risk mitigation strategies are required to facilitate extracting maximal benefit from these advances while avoiding the potential risks. Some of the risk mitigation strategies include engineered DNA detection to facilitate attribution and tracking of unintentionally or intentionally created harmful engineered DNA. Here, we find existing approaches can struggle with chimeric plasmids (part engineered, part naturally occurring), and lack any codon optimization detection of naturally occurring plasmids. To address these gaps, we provide a proof of concept tool called PlasmidScreen. At a high level, PlasmidScreen design principles focused on: 1) fast database augmentation to keep pace with growth in naturally occurring and engineered plasmids, 2) a customized &ldquo;taxonomy&rdquo; that is able to leave as unclassified any subsequence that occurs in both natural and engineered plasmids to avoid false positive classifications, 3) ability to detect codon-optimized genes within naturally occurring plasmids. Altogether, our findings provide a roadmap for enhancing detection strategies for chimeric and codon-optimized engineered plasmids.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Enhancing Biosecurity Incident Response by Predicting Unknown Genetic Circuit Logic</span>
+                                    <span class="talk-authors">William Mo, Christopher A. Vaiana, Chris J. Myers &middot; University of Colorado Boulder; Charles Stark Draper Laboratory</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Short Paper.</span>Detection of engineered DNA of unknown or suspect function will raise more questions than it answers when characterizing a biological threat. As the field of synthetic biology develops, there will be an increasingly important need to ascribe function to such DNA in order to determine its exact purpose and risk level. This paper describes a computational pipeline that aims to predict the function of initially unknown, unannotated, yet engineered prokaryotic DNA. This pipeline leverages current synthetic biology design tools and methods in a novel reverse engineering approach. The results can inform precision-targeted experimental assays in an efficient and safe manner, thus forming part of a more comprehensive incident response workflow. This work thus aims to improve biosecurity measures downstream of present DNA screening methods.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Coordinating Vulnerability Disclosure for Biosecurity Sequence Screening Tools</span>
+                                    <span class="talk-authors">Tessa Alexanian, Jake Beal, Rassin Lababidi &middot; IBBIS; RTX BBN Technologies</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Presentation.</span>Founded in 2024, the SBRC is a broad consortium of biosecurity stakeholders who collectively maintain a standard definition of &ldquo;sequences of concern&rdquo; based on a scientific assessment of biosecurity risk from synthetic nucleic acids. One of the key focus areas for the SBRC is coordinated response to vulnerabilities in biosecurity sequence screening tools. Unlike with typical cybersecurity vulnerabilities, the vulnerabilities in biosecurity screening tools most often studied tend to be correlated across tools and result from changes in biological understanding and the diverse curation issues in publicly-available data resources. As a result, SBRC members have already needed to participate in multiple coordinated responses to potential vulnerabilities, including the Microsoft-led Paraphrase study and the BGU-led split-toxins study. The SBRC has developed data-sharing agreements based on standard cybersecurity practices for managing disclosure and is now working to establish a standing working group to better coordinate the efforts of responsible red-teaming organizations and tool maintainers.</div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-row break">
+                    <div class="schedule-time">2:30 PM &ndash; 3:00 PM</div>
+                    <div class="schedule-body">
+                        <h4>Coffee &amp; Poster Session</h4>
+                    </div>
+                </div>
+
+                <!-- Session 3a -->
+                <div class="schedule-row session">
+                    <div class="schedule-time">3:00 PM &ndash; 3:45 PM</div>
+                    <div class="schedule-body">
+                        <h3>Session 3a &mdash; Privacy and Cryptography for Biological Data</h3>
+                        <div class="talk-list">
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Privacy Aware Anatomy Preserving Retinal Image Generation with ControlNet for Zero False Negative Glaucoma Screening</span>
+                                    <span class="talk-authors">Mao-Hsiu Hsu, Hsien-Chen Sun &middot; National Formosa University</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Paper.</span>Retinal fundus photographs serve a dual role: they are critical for diagnosing glaucoma yet constitute high-fidelity biometric identifiers comparable to fingerprints. This creates a fundamental tension in cyber-biosecurity: sharing data for AI training risks irreversible privacy leakage. To address this scarcity, we propose a Stable Diffusion based retinal image generation framework that jointly achieves anatomy preservation and controllable style synthesis. A hybrid anatomy control mechanism supports pathology preserving augmentation and privacy aware surrogate synthesis by combining ControlNet edge conditioning with optional Initial Latent Control. For style injection, we design three complementary modules Style Reference Injection, Spatial Masking, and Style Prompt Injection to achieve high style consistency while maintaining intra style diversity across sensor domains. In addition, a Vessel Scale Alignment strategy aligns vascular widths across different acquisition resolutions to improve cross domain compatibility. Experiments show that the proposed method generates style accurate fundus images while preserving key structural characteristics, including optic disc geometry and vascular topology. In downstream screening with MicroViT on a held out test set (Npos = 43, Nneg = 169), mixing synthetic and real data with hard negative mining achieves an AUC of 0.8525 and 33.14% specificity at 100% sensitivity (FN=0), compared with 0.7991 AUC and 32.54% specificity for the real only baseline. Although focal loss attains a high AUC (0.8529), it reduces specificity to 20.12% under the same FN=0 constraint. Comparisons against 14 representative baselines highlight the framework's effectiveness in improving safety critical medical AI.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Protecting Individual Identities in Wastewater Data Through Statistical and Differential Privacy Analysis</span>
+                                    <span class="talk-authors">Jiahui Gao, Riya Shah, Ni Trieu, Heewook Lee, Rolf Halden, Stephanie Forrest &middot; Arizona State University</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Paper.</span>Wastewater-based epidemiology (WBE) has emerged as a valuable tool for monitoring public health trends and detecting infectious diseases. While traditional WBE assays are focused on detecting and measuring metabolites from illicit drugs and other substances, advances in genetic material screening from wastewater samples enable the recovery of genetic biomarkers, such as human leukocyte antigens (HLA). The increasing deployment of genetic screening technologies in WBE raises significant privacy concerns. In this work, we present a comprehensive statistical analysis of the privacy risks associated with HLA-based wastewater data, focusing on its potential for individual re-identification. We introduce a mathematical framework for estimating the probability as a function of catchment (population) size that an individual can be identified from targeted sequencing of HLA genes in wastewater samples. We then propose a strategy using differential privacy techniques to mitigate these risks which maintains the utility of the data for epidemiological analysis. Our approach demonstrates that, with appropriate addition of noise and data aggregation, individual identities can be protected without compromising the overall effectiveness of wastewater surveillance programs. This work underscores the need for privacy-aware data handling practices in the evolving field of wastewater epidemiology.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Investigating TenSEAL&rsquo;s Homomorphic Encryption Through Predicting Encrypted RNA Sequencing Data</span>
+                                    <span class="talk-authors">Logan Choi, Wooyoung Kim &middot; University of Washington Bothell</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Short Paper.</span>We address the growing need to protect sensitive healthcare data as digital technologies and cloud-based analytics become integral to modern medical research and care delivery. Healthcare data, such as clinical or genomic information, holds immense potential to enhance disease understanding and improve diagnostics through machine learning models; however, adopting third-party cloud technologies increases the risks of data breaches and noncompliance with regulations. To address these concerns, this research investigates homomorphic encryption, a cryptographic method that allows computations on encrypted data without exposing sensitive information. The study explores the TenSEAL library to evaluate its performance in encrypting healthcare test datasets and executing predictions through a pre-trained machine learning model, while also evaluating memory utilization and encryption time. The findings indicate that TenSEAL's CKKS scheme supports secure encrypted inference on breast, lung, and prostate cancer genomic datasets, with F1-score, accuracy, recall, and precision decreasing only marginally relative to plaintext inference. On the other hand, our results also highlight a key trade-off: as encryption strength and dataset size increase, computational overhead rises sharply. Thus, healthcare practitioners and data scientists must carefully balance the need for security with the practical deployment in real-world healthcare systems.</div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-row break">
+                    <div class="schedule-time">3:45 PM &ndash; 4:00 PM</div>
+                    <div class="schedule-body">
+                        <h4>Short Break</h4>
+                    </div>
+                </div>
+
+                <!-- Session 3b -->
+                <div class="schedule-row session">
+                    <div class="schedule-time">4:00 PM &ndash; 4:45 PM</div>
+                    <div class="schedule-body">
+                        <h3>Session 3b &mdash; Hardening Biosystems from Hardware to Humans</h3>
+                        <div class="talk-list">
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">PCR Automation Threats and Mitigations</span>
+                                    <span class="talk-authors">Naor Dalal, Yossi Oren, Jacob Moran-Gilad, Rami Puzis &middot; Ben-Gurion University of the Negev</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Paper.</span>Wet-lab automation robots are cyber-physical systems designed to streamline experiments, production, and testing in the biomedical sector. A prominent recent example in which automated biomedical tests played a major role is the COVID-19 PCR tests. Such tests are implemented through scripted biological protocols, obtained from Web-based repositories, and executed by the robots. Biological protocols (manual in the past, automated today) are designed to maximize efficiency and withstand failures, but are not hardened against adversarial intervention. We point out a security weakness in the design of the industry-standard PCR protocol, and multiple vulnerabilities in an open-source wet-lab automation platform that implements it. We demonstrate an end-to-end attack that exploits these vulnerabilities to maliciously increase the false positive rate of PCR tests. We also present several defensive strategies to mitigate the attack. Our results, analyzed using a calibration curve, highlight that not only the software and hardware stack need to be secured, but also the design of biological protocols should be hardened against adversarial intervention.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">Toward a &ldquo;Poisoner&rsquo;s Handbook&rdquo; for Biological Databases</span>
+                                    <span class="talk-authors">Tudor Dumitraș, Mihai Pop &middot; University of Maryland, College Park</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Presentation.</span>Modern biological research relies on public databases and, increasingly, on machine-learning based analytics. This introduces a critical vulnerability: the analytic tools may be misled by intentionally or unintentionally corrupted data&mdash;for instance, through a data poisoning attack. Such attacks manipulate training data to skew the learned models and can lead to spurious findings or to the suppression of real discoveries. Real-world examples, including taxonomic misclassification and sequence contamination, illustrate how small errors can propagate across databases and remain undetected, with potential consequences for research and clinical decision-making. Drawing on inter-disciplinary expertise in biology, computational biology, machine learning, and cybersecurity, we outline key challenges in detecting and mitigating the threat of data poisoning for biological databases, we present intriguing research opportunities at the intersection of these fields, and we report initial results toward understanding the resilience of bioinformatics systems to data corruption.</div>
+                            </details>
+                            <details class="talk-item">
+                                <summary>
+                                    <span class="talk-title">From Indicators to Insight: Operational Validation of Behavior-Based Cyber Detection in a Live Biotechnology SOC</span>
+                                    <span class="talk-authors">Charles Frick &middot; JHUAPL</span>
+                                </summary>
+                                <div class="abstract-body"><span class="paper-type-label">Presentation.</span>Indicators of Behavior (IOB) represent a shift from artifact-based cyber detection toward identifying coordinated adversary activity through observable behaviors, yet adoption has been limited by a lack of operational validation. This presentation reports on a 90-day operational pilot conducted by Johns Hopkins Applied Physics Laboratory in partnership with CISA, the Open Cybersecurity Alliance, and the HudsonAlpha Institute for Biotechnology, where IOB analytics expressed as STIX bundles were deployed directly into a live Security Operations Center supporting active genomics research. Two realistic adversary scenarios&mdash;multi-stage data theft and genomic data integrity compromise&mdash;were evaluated across network and endpoint telemetry. Over the full pilot period, tens of thousands of benign behaviors and hundreds of partial correlations were automatically suppressed, while only fully correlated adversary behavior chains generated alerts, all within minutes and with zero false positives. The results demonstrate that behavior-based detection can operate continuously in production, significantly reduce analytic noise, and provide earlier, higher-confidence identification of coordinated threats without disrupting existing SOC workflows, offering a practical path beyond traditional indicator-centric defense.</div>
+                            </details>
+                            <div class="talk-item static">
+                                <span class="talk-title">Closing Remarks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="card" style="margin-bottom: 2rem;">
-                <h3>Accepted Papers and Presentations</h3>
-                <p><em>The detailed program schedule will be announced soon. Below is the list of accepted talks and
-                        papers.</em></p>
-
-                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-color);">Full Papers</h4>
-                <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem; line-height: 1.6;">
-                    <li style="margin-bottom: 0.5rem;"><strong>Privacy Aware Anatomy Preserving Retinal Image Generation
-                            with ControlNet for Zero-False-Negative Glaucoma Screening</strong><br><em>Mao-Hsiu Hsu,
-                            Hsien-Chen Sun, Yu-Ting Hsu</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Supply Chain Security of PCR Tests</strong><br><em>Noam
-                            Barkay, Yair Motro, Jacob Moran-Gilad, Rami Puzis</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Adversarial Genomic Sequences Could Evade Biosecurity
-                            Screening</strong><br><em>Jeyashree Krishnan, Ajay Mandyam Rangarajan, Andrea Loehr, Jason
-                            Hoelscher-Obermaier</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>DNAS-Bench: Deterministic Nucleic Acid Screener
-                            Benchmarking</strong><br><em>Henry Wong, Tadayoshi Kohno, Jeff Nivala</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Artificial Pancreas Implantables - How Healthcare
-                            Professionals may deal with DIY APS Cases</strong><br><em>Austin James</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>PCR Automation Threats and
-                            Mitigations</strong><br><em>Naor Dalal, Yossi Oren, Jacob Moran-Gilad, Rami Puzis</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Protecting individual identities in wastewater data
-                            through statistical and differential privacy analysis</strong><br><em>Jiahui Gao, Riya Shah,
-                            Ni Trieu, Heewook Lee, Rolf Halden, Stephanie Forrest</em></li>
-                </ul>
-
-                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-color);">Short Papers</h4>
-                <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem; line-height: 1.6;">
-                    <li style="margin-bottom: 0.5rem;"><strong>Investigating TenSEAL's Homomorphic Encryption through
-                            Predicting Encrypted RNA Sequencing Data</strong><br><em>Logan Choi, Wooyoung Kim</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Towards Enhanced Detection of Genetically Engineered
-                            Plasmids</strong><br><em>Felix M. Quintana, Ryan D. Doughty, Michael G. Nute, Lydia E.
-                            Kavraki, Todd J. Treangen</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Cyberbiosecurity Risk Assessment Framework for Genomic
-                            Data Storage in Cloud Environments</strong><br><em>Abtsega Tesfaye Chufare</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Enhancing Biosecurity Incident Response by Predicting
-                            Unknown Genetic Circuit Logic</strong><br><em>William Mo, Chris Myers, Christopher
-                            Vaiana</em></li>
-                </ul>
-
-                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-color);">Position Papers</h4>
-                <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem; line-height: 1.6;">
-                    <li style="margin-bottom: 0.5rem;"><strong>Limitations of Biological Risk Evaluation for LLMs and
-                            Autonomous Science</strong><br><em>Andy Lin, Brian Bartoldson, George Bonheyo, Ryan
-                            Goldhahn, Bhavya Kalikhura, Greg Klunder, Brian Mayer, C. Mark Maupin, Sai Munikoti, James
-                            Oakdale, Lauren Phillips, Paul Rigor, Jonathan Tu, Janice Van Haeften, Henry Williams, Cindy
-                            Gonzales, Karl Pazdernik</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Analysis of Trustworthiness and Fairness in Machine
-                            Learning for Healthcare</strong><br><em>Bingyu Liu</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Targeting Systems, Not Pathogens: Adapting Cybersecurity
-                            Threat Modeling for Modern Biosecurity</strong><br><em>James Diggans, Kevin Flyangolts, Rami
-                            Puzis</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Defining Cyberbiosecurity by Biological
-                            Consequence</strong><br><em>Tia Pope</em></li>
-                </ul>
-
-                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-color);">Presentations</h4>
-                <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem; line-height: 1.6;">
-                    <li style="margin-bottom: 0.5rem;"><strong>From Indicators to Insight: Operational Validation of
-                            Behavior-Based Cyber Detection in a Live Biotechnology SOC</strong><br><em>Charles
-                            Frick</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Teaching Ethical Hacking for the Bioeconomy: A
-                            Cyberbiosecurity Curriculum in Practice</strong><br><em>Charles Frick</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Cybersecurity and Privacy Threat Modeling: A Genomics Use
-                            Case</strong><br><em>Jared Sheldon, Isabelle Brown-Cantrell, Phillip Whitlow, Scott
-                            Ross</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>The AI - Biosecurity Research Hackathon: Cross-Track
-                            Findings on DNA Screening, Early Warning, and Biosecurity Tools</strong><br><em>Jason
-                            Hoelscher-Obermaier, Jaime Raldía Veuthey, Kamil Alaa, Joshua Landes, Grace Braithwaite,
-                            James Montavon</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Toward a 'Poisoner's Handbook' for Biological
-                            Databases</strong><br><em>Tudor Dumitras, Mihai Pop</em></li>
-                    <li style="margin-bottom: 0.5rem;"><strong>Coordinating Vulnerability Disclosure for Biosecurity
-                            Sequence Screening Tools</strong><br><em>Tessa Alexanian, Jake Beal, Rassin Lababidi</em>
-                    </li>
-                </ul>
+            <h2 id="posters" style="margin-top: 4rem; margin-bottom: 1rem;">Posters</h2>
+            <p class="schedule-note" style="margin-top: 0; margin-bottom: 1.5rem;">
+                Posters are available during both coffee breaks. Poster authors will deliver a 2-minute lightning pitch during the lightning block before lunch.
+            </p>
+            <div class="posters-list">
+                <details class="poster-item">
+                    <summary>
+                        <span class="poster-title">Supply Chain Security of PCR Tests</span>
+                        <span class="poster-authors">Noam Barkay, Yair Motro, Jacob Moran-Gilad, Rami Puzis &middot; Ben-Gurion University of the Negev</span>
+                    </summary>
+                    <div class="abstract-body">The COVID-19 pandemic highlighted the important role of polymerase chain reaction (PCR) tests in disease diagnosis. These tests are ubiquitous in biology and medicine, facilitating the rapid detection and investigation of new disease agents, their variants and mutations. The development process of PCR tests is long and complex, with multiple critical stages vulnerable to cyber-attacks. One such stage involves obtaining primers, short DNA molecules that match the specific DNA of the targeted disease agents. Primers are obtained through the e-commerce platforms of synthetic DNA providers. In this paper, we investigate the risk of a supply-chain attack in which the integrity of the primers ordered is compromised to potentially increase the false-positive detection rate of PCR tests. Assuming imperfect cyber hygiene of typical e-commerce platforms of synthetic DNA providers, we discuss (1) the order integrity threat due to form-jacking attack, (2) the selection of adversarial primers for different types of positive control, (3) design guidelines of adversary resilient primers, and (4) the benefits of negative control for adversarial resilience of PCR tests.</div>
+                </details>
+                <details class="poster-item">
+                    <summary>
+                        <span class="poster-title">Limitations of Biological Risk Evaluation for LLMs and Autonomous Science</span>
+                        <span class="poster-authors">Andy Lin, Brian R. Bartoldson, George T. Bonheyo, Ryan Goldhahn, Bhavya Kalikhura, Greg Klunder, C. Mark Maupin, Sai Munikoti, James S. Oakdale, Lauren A. Phillips, Paul Rigor, Jonathan H. Tu, Janice R. Van Haeften, Henry Williams, Cindy Gonzales, Karl Pazdernik &middot; Pacific Northwest National Laboratory; Lawrence Livermore National Laboratory</span>
+                    </summary>
+                    <div class="abstract-body">Large language models are increasingly used to accelerate scientific research and solve critical societal challenges. However, there are increasing concerns that these models raise biodefense, biosecurity, and biosafety risks since they can be misused or conduct harmful actions themselves. Methodologies, such as benchmarking and red-teaming are used to evaluate the risks posed by these models; however, these approaches have limitations when they are applied to biological risk. In this work, we outline challenges current methods face when evaluating biological risk of LLMs, agentic systems, and autonomous systems as well as possible mitigations for these challenges.</div>
+                </details>
+                <details class="poster-item">
+                    <summary>
+                        <span class="poster-title">Analysis of Trustworthiness and Fairness in Machine Learning for Healthcare</span>
+                        <span class="poster-authors">Bingyu Liu &middot; Wentworth Institute of Technology</span>
+                    </summary>
+                    <div class="abstract-body">Despite rapid advances in machine learning, widespread clinical adoption in radiology remains constrained by fundamental challenges, including stringent data privacy requirements, the high cost and variability of expert image annotation, and limited robustness of models across heterogeneous scanners, imaging protocols, and patient populations. In addition, severe class imbalance and algorithmic bias inherent to many radiologic applications can undermine diagnostic precision and disproportionately affect underrepresented populations, raising concerns about reliability and equity in clinical deployment. Emerging approaches such as privacy-preserving federated learning, self-supervised and weakly supervised learning, and domain adaptation offer promising strategies to improve scalability and generalizability under real-world conditions. Equally critical are rigorous assessments of algorithmic fairness and the integration of radiology-aware explainable artificial intelligence to enhance transparency, mitigate bias, and foster clinician trust. In this work, we systematically analyze the interconnected challenges of imbalanced datasets, bias, data privacy, and diagnostic precision, and present a unified framework that outlines practical design principles and evaluation strategies for developing robust, fair, and privacy-preserving machine learning systems for clinical radiology.</div>
+                </details>
+                <details class="poster-item">
+                    <summary>
+                        <span class="poster-title">Artificial Pancreas Implantables &mdash; How Healthcare Professionals May Deal with DIY APS Cases</span>
+                        <span class="poster-authors">Austin James, Xavier Palmer, Lucas Potter, Celisha Oscar &middot; University of East London; Biosview Labs; Howard University</span>
+                    </summary>
+                    <div class="abstract-body">Automated insulin delivery (AID) and artificial pancreas systems increasingly serve as safety-critical cyber-physical technologies in clinical care, integrating sensors, algorithms, software, and insulin-delivery hardware to automate a life-sustaining therapy. While regulated commercial systems are supported by formal approval pathways, manufacturer governance, and post-market surveillance, clinicians are also encountering patients who rely on do-it-yourself (DIY) artificial pancreas systems that operate outside conventional regulatory and institutional control structures. This paper examines how routine clinical handling practices intersect with cyber-biosecurity risk across both regulated and DIY AID systems. Using a socio-technical systems perspective, we synthesise clinical handling themes, including eligibility for continued use, override authority, alarm management, data validation, and transitions of care, and map these functions to integrity, availability, and authorisation attack surfaces relevant to patient safety. We show that cyber-biosecurity risks in artificial pancreas systems are not limited to adversarial threats, but also arise from structural mismatches between clinical responsibility and technical authority, particularly in DIY contexts where software provenance and configuration control are diffuse. Building on this analysis, we propose a minimal clinical cyber-safety handling bundle focused on harm containment, governance clarity, and defensible clinical decision-making rather than device optimisation. Finally, we identify critical research gaps in real-world failure modes, incident reporting, and the governance of DIY systems.</div>
+                </details>
+                <details class="poster-item">
+                    <summary>
+                        <span class="poster-title">Cyberbiosecurity Risk Assessment Framework for Genomic Data Storage in Cloud Environments</span>
+                        <span class="poster-authors">Abtsega Tesfaye Chufare, Ribka Tiruneh, Sisay Beyene Juja &middot; The George Washington University</span>
+                    </summary>
+                    <div class="abstract-body">The rapid uptake of cloud computing services for the storage and analysis of genomic data has created a complicated intersection of cybersecurity, privacy, and biosecurity challenges. Unlike typical health information, genomic data is unchangeable, inherently identifiable, and can disclose sensitive traits across generations. Standard cloud risk assessment models mainly focus on generic issues of confidentiality, integrity, and availability, but do not consider genomic-specific sensitivity factors such as the persistence of re-identification, familial risk, and dual-use biosecurity concerns. This paper suggests a detailed cyberbiosecurity risk assessment framework designed specifically for genomic data stored in cloud settings. The framework combines a genomic-focused threat classification with a multi-factor risk scoring approach that includes a biological sensitivity modifier to enhance prioritization accuracy. The identified risks are systematically linked to architectural, technical, and governance-based control measures for mitigation.</div>
+                </details>
             </div>
 
         </div>
