@@ -8,8 +8,8 @@
                 <ul class="nav-links">
                     <li><a href="cfp.html" data-nav="cfp">Call for Papers</a></li>
                     <li><a href="program.html" data-nav="program">Program</a></li>
+                    <li><a href="proceedings.html" data-nav="proceedings">Proceedings</a></li>
                     <li><a href="organization.html" data-nav="organization">Organizers</a></li>
-                    <li><a href="https://na.eventscloud.com/ereg/index.php?eventid=867927&" class="btn" target="_blank" rel="noopener">Register</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>

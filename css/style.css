@@ -150,6 +150,17 @@ li::marker {
   color: var(--primary-color);
 }
 
+.btn-outline {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: var(--bg-dark);
+}
+
 /* Navbar variant: compact, aligned with nav link line-height */
 .nav-links .btn {
   padding: 0.35rem 0.95rem;
